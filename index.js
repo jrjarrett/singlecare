@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-var MONGODB_URI = "<insert mongo creds here>";
+var MONGODB_URI = "";
 let cachedDb = null;
 
 var main = function () {
@@ -45,6 +45,7 @@ var main = function () {
           if (docCount) {
             console.log('The number of Sc numbers is ' + docCount);
             totalSingleCareNumbers = docCount;
+            db.close();
           }
         });
         console.log('At bottom of countDocument x is ' + x);
