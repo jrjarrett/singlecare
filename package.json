@@ -1,0 +1,15 @@
+{
+  "name": "singlecare",
+  "version": "1.0.0",
+  "description": "Read the singlecare Mongo table",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "count": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.6.10"
+  }
+}
